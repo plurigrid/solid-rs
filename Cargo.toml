@@ -1,0 +1,24 @@
+[package]
+name = "language_to_solidity"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+reqwest = "0.11"
+solidity = "0.1"
+llm = "0.1"
+llm-chain = "0.1"
+language_parser = "0.1"
+tokio = { version = "1", features = ["full"] }
+uuid = "0.8"
+cargo_toml = "0.8"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[lib]
+name = "language_to_solidity_lib"
+path = "src/lib.rs"
